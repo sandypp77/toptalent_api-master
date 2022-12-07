@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/frontend/libraries/bootstrap/css/bootstrap.css" />
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!--custom css-->
+    <link rel="stylesheet" href="/frontend/css/email.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+                <a href="#" class="navbar-brand">
+                    <img class="logo" src="/frontend/images/logo.png" alt="logo" />
+                </a>
+            </div>
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+                <li>
+                    <span class="text-muted">
+                        | &nbsp; Find The Best Fit
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section-verify d-flex align-items-center">
+            <div class="col text-center">
+                <img src="/frontend/images/mail.jpg" alt="">
+                <h1>Your e-mail has been verified. Open Toptalent app, then login with <span th:text="${email}"></span></h1>
+                <hr/>
+                <a href="http://54.251.83.205/toptalent/#/login" deeplink="true" style="display:inline-block;background:#1B2A42;color:#ffffff;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:16px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:8px;"> Back to Login </a>
+            </div>
+        </section>
+    </main>
+
+    
+    <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
